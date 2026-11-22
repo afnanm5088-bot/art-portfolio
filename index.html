@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض أعمال أفنان الفنية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- القسم التعريفي -->
+  <header class="hero">
+    <div class="container">
+      <span class="badge">معرض فني رقمي</span>
+      <h1>أفنان عبد الحكيم محمد</h1>
+      <p>أهلاً بكم في معرض أعمالي الفنية؛ أشارككم هنا مجموعة من اللوحات التي تمزج بين دفء الألوان وتفاصيل التكوين الفني.</p>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="container">
+
+    <!-- قسم الأعمال الأربع -->
+    <section class="gallery-section">
+      <div class="section-header">
+        <h2>أبرز الأعمال الفنية</h2>
+        <p>مختارات من أربع لوحات فنية متنوعة في أسلوبها وألوانها</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- العمل الأول -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/art-1.jpg" alt="بورتريه قطة بألوان متعددة">
+          </div>
+          <div class="card-body">
+            <h3>بورتريه قطة بألوان متعددة</h3>
+            <p>عمل فني يبرز ملامح القطة وعينها الخضراء بتقسيمات لونية زاهية ومتناغمة تمنح اللوحة حيوية وحضوراً لافتاً.</p>
+          </div>
+        </article>
+
+        <!-- العمل الثاني -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/art-2.jpg" alt="طائران وسط زخارف دافئة">
+          </div>
+          <div class="card-body">
+            <h3>طائران وسط زخارف دافئة</h3>
+            <p>لوحة تجمع بين رقة حركة الطائرين ودفء الخلفية المزخرفة بتدرجات البرتقالي والأحمر والزيتوني مع عمق كحلي هادئ.</p>
+          </div>
+        </article>
+
+        <!-- العمل الثالث -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/art-3.jpg" alt="طائر محلق على كانفس بيضاوي">
+          </div>
+          <div class="card-body">
+            <h3>طائر محلق على كانفس بيضاوي</h3>
+            <p>تكوين فني مميز لطائر يفتح جناحيه وسط دائرة داكنة تتناغم مع درجات الأزرق الهادئة ولمسات الزخرفة الذهبية.</p>
+          </div>
+        </article>
+
+        <!-- العمل الرابع -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/art-4.jpg" alt="بورتريه فهد">
+          </div>
+          <div class="card-body">
+            <h3>بورتريه فهد</h3>
+            <p>لوحة تبرز تفاصيل الفهد ونظرته الثابتة بتباين جميل بين الإضاءة والظل ولمسات لونية ناعمة تعكس هدوء التكوين.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- قسم التواصل عبر واتساب -->
+    <section class="contact-section">
+      <h2>تواصل معي</h2>
+      <p>يسعدني تواصلكم عبر الواتساب للاستفسار عن اللوحات الفنية، الطلبات الخاصة، أو التعاون.</p>
+      <a href="https://wa.me/966582883128" target="_blank" rel="noopener noreferrer" class="btn">تواصل معي عبر الواتساب</a>
+    </section>
+
+  </main>
+
+  <!-- التذييل -->
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 أفنان عبد الحكيم محمد</p>
+  </footer>
+
+  <!-- نافذة معاينة مكبرة للوحة -->
+  <div id="artModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button type="button" id="closeModal" class="modal-close" aria-label="إغلاق النافذة">&times;</button>
+      <img id="modalImg" src="" alt="">
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
